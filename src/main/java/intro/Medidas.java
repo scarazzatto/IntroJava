@@ -19,8 +19,11 @@ public class Medidas {
         System.out.println("c - Calcular Area Modo Curto");
         System.out.println("d - Contar até Dez");
         System.out.println("e - Calcular Area Modo Extenso");
+        System.out.println("h - Contagem modoDoWhile de 0 até 10");
         System.out.println("i - If Simples");
         System.out.println("r - Contagem regressiva de 10 até 0");
+        System.out.println("w - Contagem modoWhile de 0 até 10");
+
 
         System.out.println("Digite a opção desejada: ");
 
@@ -47,15 +50,26 @@ public class Medidas {
                 System.out.println("Você escolheu usar o método calcularAreaModoExtenso");
                 calcularAreaModoExtenso();
                 break;
+            case "h":
+            case "H":
+                System.out.println("Você escolheu usar o método ContagemdoWhile");
+                contagemDoWhile();
+                break;
             case "i":
             case "I":
                 System.out.println("Você escolheu usar o método ifSimples");
                 ifSimples();
                 break;
+
             case "r":
             case "R":
                 System.out.println("Você escolheu usar o método contagemRegressiva");
                 contagemRegressiva();
+                break;
+            case "w":
+            case "W":
+                System.out.println("Você escolheu usar o método contagemWhile");
+                contagemWhile();
                 break;
             default:
                 System.out.println("Você não escolheu nenhum método válido");
@@ -81,6 +95,30 @@ public class Medidas {
 
         for(int numero = 10; numero > -1; numero--){
             System.out.println(numero);
+        }
+    }
+
+    public static void contagemDoWhile(){
+
+        System.out.println("Contagem doWhile");
+
+        int numero = 0;
+
+        do{
+            System.out.println(numero);
+            numero++;
+        }while (numero<11);
+    }
+
+    public static void contagemWhile(){
+
+        System.out.println("Contagem While");
+
+        int numero = 0;
+
+        while(numero<11){
+            System.out.println(numero);
+            numero++;
         }
     }
 
